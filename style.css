@@ -83,23 +83,24 @@ header .bx-menu {
 }
 
 section {
-  padding: 20px 9%;
 }
 
 .home {
+  padding: 20px 9%;
   display: flex;
   align-items: center;
   background: url("kucing.jpg");
-  min-height: 100vh;
+  min-height: 80vh;
   background-size: cover;
   background-position: center;
+  filter: brightness(80%);
 }
 
 .home .content {
   font-size: large;
   max-width: 60%;
   color: var(--second);
-  text-shadow: 3px 3px 2px white;
+  text-shadow: 3px 5px 1px black;
 }
 
 .home .content h3 {
@@ -108,7 +109,7 @@ section {
 
 .home .content span {
   font-size: 40px;
-  color: black;
+  color: blue;
 }
 
 .home .content span {
@@ -124,10 +125,35 @@ section {
   text-align: center;
   padding: 10px;
   font-size: 10px;
+  text-shadow: none;
 }
 
 .buton:hover {
   background: blue;
+}
+
+.About {
+  padding-top: 50px;
+}
+.heading {
+  text-align: center;
+  color: var(--second);
+  font-size: 50px;
+  padding: 20px 9%;
+}
+.heading span {
+  color: var(--primary);
+}
+.video-content h3 {
+  padding-top: 20px;
+  text-align: center;
+}
+.video-content video {
+  width: 100%;
+}
+.conten {
+  padding: 20px 9%;
+  max-width: 70%;
 }
 
 @media screen and (max-width: 768px) {
