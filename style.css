@@ -154,6 +154,57 @@ section {
 .conten {
   padding: 20px 9%;
   max-width: 70%;
+  font-size: large;
+}
+
+.galeri {
+  position: relative;
+  height: 15vh;
+  width: 100%;
+}
+
+.galeri h1 {
+  position: relative;
+  height: auto;
+  width: 500px;
+  left: 50%;
+  transform: translatex(-50%);
+  margin: 5% 0 2% 0;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 550;
+  letter-spacing: 2px;
+  color: var(--primary);
+  border-left: 5px solid var(--primary);
+  border-right: 5px solid var(--primary);
+  background: var(--second);
+}
+
+.galeri p {
+  position: relative;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  color: #666;
+}
+
+.galeri .grid {
+  position: relative;
+  height: auto;
+  width: 70%;
+  margin: auto;
+  padding: 45% 0;
+  display: grid;
+}
+
+.galeri .grid img {
+  position: relative;
+  height: 100%;
+  width: 70%;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
