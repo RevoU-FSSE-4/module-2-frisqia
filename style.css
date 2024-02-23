@@ -186,22 +186,22 @@ section {
   object-fit: cover;
 }
 .card {
-  border: 2px solid black;
-  justify-content: space-between;
   align-items: center;
   display: grid;
   padding: 10px 9%;
   margin: 10px;
   gap: 5px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-auto-rows: 300px;
   grid-auto-flow: dense;
 }
 .vertikal {
-  grid-row: span 2;
-}
-.horizontal {
   grid-column: span 2;
+}
+
+.horizontal {
+  grid-row: span 2;
 }
 
 .big {
@@ -209,18 +209,60 @@ section {
   grid-row: span 2;
 }
 
-@media (max-width: 560px) {
-  .vertikal {
-    grid-row: span 1;
-  }
-  .horizontal {
-    grid-column: span 1;
-  }
+footer {
+  background: fixed;
+  background-size: 100%;
+  font-size: large;
+  padding: 30px;
+  text-align: center;
+  background-color: var(--primary);
+  width: 100%;
+}
 
-  .big {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
+.form {
+  padding-top: 10px 9%;
+}
+form {
+  padding: 20px 10%;
+  width: 100%;
+  align-items: center;
+}
+.input {
+  width: 100%;
+  display: flex;
+}
+
+.form1 {
+  margin: 10px;
+  width: 30%;
+}
+.Massage {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+}
+
+.w3review {
+  width: 100%;
+}
+.input label {
+  font-size: 100;
+}
+.input-bd {
+  margin: 10px;
+  text-align: left;
+  display: flex;
+}
+.bd-display {
+  width: 100%;
+  display: grid;
+}
+.bd {
+  width: 20%;
+}
+
+.send {
+  text-align: start;
 }
 
 @media screen and (max-width: 768px) {
@@ -241,7 +283,6 @@ section {
   }
 
   header .navbar {
-    color: var(--second);
     display: block;
     position: absolute;
     top: 100%;
@@ -262,5 +303,16 @@ section {
   }
   .card {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .vertikal {
+    grid-row: span 1;
+  }
+  .horizontal {
+    grid-column: span 1;
+  }
+
+  .big {
+    grid-column: span 1;
+    grid-row: span 1;
   }
 }
