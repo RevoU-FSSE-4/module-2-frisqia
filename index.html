@@ -8,6 +8,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -33,7 +45,9 @@
         <li><a href="#Contact">Contact</a></li>
         <li><a href="#Career">Career</a></li>
       </nav>
-      <nav class="search"><a href="#" class="bx bx-search-alt"></a></nav>
+      <nav class="search">
+        <a href="#" class="bx bx-search-alt"></a>
+      </nav>
     </header>
     <article>
       <section class="home" id="home">
@@ -129,82 +143,146 @@
                 alt=""
               />
             </div>
+            <div class="card-2"></div>
           </div>
         </div>
       </picture>
-      <div class="text">
-        <strong>Funny Cat</strong>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iure
-          reiciendis sint voluptate nemo et iste aut consequatur ea a tempore
-          suscipit ab voluptates repellat, veniam in beatae sed expedita!
-        </p>
+      <div class="fact">
+        <h1>Fact of cat</h1>
+
+        <div class="text">
+          <div class="color-p">
+            <p>
+              <strong>Funny Cat</strong>
+              What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an
+              unknown printer took a galley of type and scrambled it to make a
+              type specimen book. It has survived not only five centuries, but
+              also the leap into electronic typesetting, remaining essentially
+              unchanged. It was popularised in the 1960s with the release of
+              Letraset sheets containing Lorem Ipsum passages, and more recently
+              with desktop publishing software like Aldus PageMaker including
+              versions of Lorem Ipsum.
+            </p>
+            <ol>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ol>
+          </div>
+          <div class="color-p1">
+            <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin
+              professor at Hampden-Sydney College in Virginia, looked up one of
+              the more obscure Latin words, consectetur, from a Lorem Ipsum
+              passage, and going through the cites of the word in classical
+              literature, discovered the undoubtable source. Lorem Ipsum comes
+              from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+              Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
+              BC. This book is a treatise on the theory of ethics, very popular
+              during the Renaissance. The first line of Lorem Ipsum, "Lorem
+              ipsum dolor sit amet..", comes from a line in section 1.10.32. The
+              standard chunk of Lorem Ipsum used since the 1500s is reproduced
+              below for those interested. Sections 1.10.32 and 1.10.33 from "de
+              Finibus Bonorum et Malorum" by Cicero are also reproduced in their
+              exact original form, accompanied by English versions from the 1914
+              translation by H. Rackham.
+            </p>
+          </div>
+        </div>
       </div>
     </article>
     <footer>
-      <h1>interested to Order</h1>
-      <form>
-        <div class="input-bd">
-          <div class="bd-display">
-            <label for="birthdaytime">discussion time:</label>
+      <div class="loc">
+        <h1>our Location</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.407242142557!2d106.84764527409614!3d-6.209896560825876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4711cac0e99%3A0x47c98448b038a7d8!2sManggarai!5e0!3m2!1sid!2sid!4v1708690421480!5m2!1sid!2sid"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="form-discusion">
+        <h1>interested to Order</h1>
+        <form>
+          <div class="input-bd">
+            <div class="bd-display">
+              <label for="discussion">discussion date:</label>
+              <input
+                type="datetime-local"
+                id="discussion"
+                name="discussion"
+                class="bd"
+                required
+              />
+            </div>
+            <div class="bd-display">
+              <label for="pet">type: </label>
+              <select
+                id="pet"
+                name="type pet"
+                form="type pet"
+                class="bd"
+                required
+              >
+                <option>anggora</option>
+                <option>persia</option>
+                <option>munchkin</option>
+                <option>mix</option>
+              </select>
+            </div>
+            <div class="bd-display">
+              <label for="whatsapp">contact:</label>
+              <input
+                type="tel"
+                pattern="\(\d\d\d\d\)-\d\d\d\d\d\d\d"
+                id="whatsapp"
+                name="whatsapp"
+                placeholder="whatsapp number"
+                class="bd"
+                required
+              />
+            </div>
+          </div>
+          <div class="input">
             <input
-              type="datetime-local"
-              id="birthdaytime"
-              name="birthdaytime"
-              class="bd"
+              type="text"
+              id="name"
+              name="name"
+              autofocus
+              placeholder="Your Name"
+              class="form1"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              class="form1"
+              required
             />
           </div>
-          <div class="bd-display">
-            <label for="pet">type: </label>
-            <select id="pet" name="type pet" form="type pet" class="bd">
-              <option>anggora</option>
-              <option>persia</option>
-              <option>munchkin</option>
-              <option>mix</option>
-            </select>
-          </div>
-          <div class="bd-display">
-            <label for="whatsapp">contact:</label>
-            <input
-              type="tel"
-              id="whatsapp"
-              name="whatsapp"
-              placeholder="whatsapp number"
-              class="bd"
-            />
-          </div>
-        </div>
-        <div class="input">
-          <input
-            type="text"
-            id="name"
-            name="name"
-            autofocus
-            placeholder="Your Name"
-            class="form1"
-          />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your Email"
-            class="form1"
-          />
-        </div>
 
-        <div class="Massage">
-          <textarea
-            id="w3review"
-            name="w3review"
-            rows="20"
-            cols="105"
-            placeholder="recuest description"
-          ></textarea>
-        </div>
-        <div class="send">
-          <a href="#" class="buton">Send</a>
-        </div>
-      </form>
+          <div class="Massage">
+            <textarea
+              id="w3review"
+              name="w3review"
+              rows="20"
+              cols="105"
+              placeholder="recuest description"
+            ></textarea>
+          </div>
+          <div class="send">
+            <a href="#" class="buton">Send</a>
+          </div>
+        </form>
+      </div>
     </footer>
   </body>
 </html>
