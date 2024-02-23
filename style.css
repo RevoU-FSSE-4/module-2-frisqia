@@ -163,7 +163,7 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 40px 20px 0 20px;
+  margin: 40px 20px 0 0px;
 }
 .grid {
   width: 50%;
@@ -187,7 +187,7 @@ section {
 }
 .card {
   align-items: center;
-  display: grid;
+  display: flex;
   padding: 10px 9%;
   margin: 10px;
   gap: 5px;
@@ -209,13 +209,18 @@ section {
   grid-row: span 2;
 }
 
+.text {
+  padding-top: 20px;
+}
+
 footer {
   background: fixed;
   background-size: 100%;
   font-size: large;
-  padding: 30px;
+  padding: 10px;
   text-align: center;
   background-color: var(--primary);
+  color: var(--second);
   width: 100%;
 }
 
@@ -230,23 +235,25 @@ form {
 .input {
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .form1 {
   margin: 10px;
-  width: 30%;
+  width: 50%;
 }
 .Massage {
   padding: 10px;
   display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#w3review {
   width: 100%;
 }
 
-.w3review {
-  width: 100%;
-}
 .input label {
-  font-size: 100;
+  font-size: 100%;
 }
 .input-bd {
   margin: 10px;
@@ -258,10 +265,11 @@ form {
   display: grid;
 }
 .bd {
-  width: 20%;
+  width: 50%;
 }
 
 .send {
+  padding: 10px;
   text-align: start;
 }
 
@@ -302,13 +310,14 @@ form {
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
   .card {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   .vertikal {
-    grid-row: span 1;
+    grid-column: span 2;
   }
   .horizontal {
-    grid-column: span 1;
+    grid-row: span 2;
   }
 
   .big {
