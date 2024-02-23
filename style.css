@@ -179,6 +179,7 @@ section {
   padding-bottom: 10px;
   font-weight: bolder;
   border-bottom: 3px solid black;
+  animation: animate 3s ease-in-out infinite;
 }
 
 .grid h1 span {
@@ -212,6 +213,39 @@ section {
 .big {
   grid-column: span 2;
   grid-row: span 2;
+}
+
+.figur {
+  padding-bottom: 10px;
+}
+.slider {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+figure {
+  position: relative;
+  left: 0;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.slide h1 {
+  position: absolute;
+  font-size: 30px;
+  width: 100%;
+  color: var(--second);
+  text-align: center;
+  margin-top: 10%;
+  text-shadow: 1px 1px 2px black;
+}
+.slider img {
+  width: 100%;
+  height: 100%;
 }
 
 footer {
@@ -368,5 +402,24 @@ form {
   .loc iframe {
     width: 300px;
     height: 225px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-70px);
+  }
+  25% {
+    transform: translateY(-40px);
+  }
+  50% {
+    transform: translateY(-70px);
+  }
+  75% {
+    transform: translateY(-40px);
+  }
+
+  100% {
+    transform: translateY(-70px);
   }
 }
