@@ -104,7 +104,7 @@ section {
   text-shadow: 3px 5px 1px black;
 }
 
-.home .content h3 {
+.home .content h1 {
   font-size: 40px;
 }
 
@@ -145,7 +145,7 @@ section {
 .heading span {
   color: var(--primary);
 }
-.video-content h3 {
+.video-content h2 {
   padding-top: 20px;
   text-align: center;
 }
