@@ -91,7 +91,7 @@ section {
   padding: 20px 9%;
   display: flex;
   align-items: center;
-  background: url("kucing.jpg");
+  background: url("kucing.png");
   min-height: 80vh;
   background-size: cover;
   background-position: center;
