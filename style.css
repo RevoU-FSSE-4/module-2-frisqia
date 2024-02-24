@@ -100,10 +100,16 @@ section {
 }
 
 .home .content {
-  font-size: large;
+  font-size: 20px;
   max-width: 60%;
   color: var(--second);
   text-shadow: 3px 5px 1px black;
+  transform: font-size 3s;
+}
+
+.home .content:hover {
+  cursor: pointer;
+  font-size: 25px;
 }
 
 .home .content h1 {
@@ -191,20 +197,17 @@ section {
 }
 
 .card img {
-  width: 200px;
+  width: 100%;
   height: 100%;
-  object-fit: cover;
 }
+
 .card {
   align-items: center;
-  display: flex;
+  display: grid;
   padding: 10px 9%;
   margin: 10px;
   gap: 5px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-auto-rows: 300px;
-  grid-auto-flow: dense;
+  grid-template-columns: repeat(4, 1fr);
 }
 .vertikal {
   grid-column: span 2;
@@ -326,6 +329,8 @@ form {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  list-style-type: decimal;
+  list-style-position: inherit;
 }
 
 .color-p {
@@ -334,6 +339,16 @@ form {
   color: var(--second);
   text-shadow: 2px 3px 1px black;
 }
+.color-p li {
+  font-size: 86%;
+  padding: 5px;
+  transition: font-size 3s;
+}
+
+.color-p li:hover {
+  font-size: 100%;
+}
+
 .color-p1 {
   padding: 20px;
   background: var(--second);
@@ -386,15 +401,14 @@ form {
     grid-template-columns: repeat(2, 1fr);
   }
   .vertikal {
-    grid-column: span 1;
+    grid-column: span 2;
   }
   .horizontal {
-    grid-row: span 1;
+    grid-column: span 1;
   }
 
   .big {
-    grid-column: span 1;
-    grid-row: span 2;
+    grid-column: span 2;
   }
 
   .text {
