@@ -45,10 +45,12 @@ header .bx-menu {
   padding: 20px;
   margin: 10px;
   color: var(--second);
+  text-shadow: 2px 1px 1px black;
   font-style: italic;
 }
 
 .logo span {
+  text-shadow: none;
   color: var(--primary);
 }
 
@@ -137,12 +139,14 @@ section {
   padding-top: 50px;
 }
 .heading {
+  text-shadow: 2px 1px 1px black;
   text-align: center;
   color: var(--second);
   font-size: 50px;
   padding: 20px 9%;
 }
 .heading span {
+  text-shadow: none;
   color: var(--primary);
 }
 .video-content h2 {
@@ -187,7 +191,7 @@ section {
 }
 
 .card img {
-  width: 100%;
+  width: 200px;
   height: 100%;
   object-fit: cover;
 }
