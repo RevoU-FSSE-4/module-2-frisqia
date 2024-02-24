@@ -101,12 +101,6 @@ header .bx-menu {
   max-width: 60%;
   color: var(--second);
   text-shadow: 3px 5px 1px black;
-  transform: font-size 3s;
-}
-
-.home .content:hover {
-  cursor: pointer;
-  font-size: 25px;
 }
 
 .home .content h1 {
@@ -135,7 +129,7 @@ header .bx-menu {
 }
 
 .buton:hover {
-  background: blue;
+  background: rgb(111, 111, 209);
 }
 
 .About {
@@ -207,18 +201,28 @@ header .bx-menu {
   grid-template-columns: repeat(4, 1fr);
 }
 .vertikal {
+  transition: transform 2s;
   grid-column: span 2;
 }
 
+.vertikal:hover {
+  transform: scale(1.2);
+}
 .horizontal {
+  transition: transform 2s;
   grid-row: span 2;
 }
-
+.horizontal:hover {
+  transform: scale(1.2);
+}
 .big {
+  transition: transform 2s;
   grid-column: span 2;
   grid-row: span 2;
 }
-
+.big:hover {
+  transform: scale(1.2);
+}
 .figur {
   padding-bottom: 10px;
 }
@@ -346,13 +350,7 @@ form {
   text-shadow: 2px 3px 1px black;
 }
 .color-p li {
-  font-size: 86%;
-  padding: 5px;
-  transition: font-size 3s;
-}
-
-.color-p li:hover {
-  font-size: 100%;
+  padding: 0;
 }
 
 .color-p1 {
