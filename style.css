@@ -35,6 +35,7 @@ header {
 }
 
 header #bar-menu {
+  background: white;
   display: none;
 }
 header .bx-menu {
@@ -47,6 +48,7 @@ header .bx-menu {
   color: var(--second);
   text-shadow: 2px 1px 1px black;
   font-style: italic;
+  background: white;
 }
 
 .logo span {
@@ -55,6 +57,7 @@ header .bx-menu {
 }
 
 .navbar {
+  font-weight: bolder;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -121,6 +124,8 @@ header .bx-menu {
   border-radius: 50px;
   color: var(--primary);
   background: var(--second);
+  letter-spacing: 1px;
+  font-weight: bold;
   cursor: pointer;
   text-align: center;
   padding: 10px;
@@ -129,7 +134,7 @@ header .bx-menu {
 }
 
 .buton:hover {
-  background: rgb(111, 111, 209);
+  opacity: 0.9;
 }
 
 .About {
@@ -339,8 +344,6 @@ form {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  list-style-type: decimal;
-  list-style-position: inherit;
 }
 
 .color-p {
@@ -349,8 +352,13 @@ form {
   color: var(--second);
   text-shadow: 2px 3px 1px black;
 }
+
+.color-p ul {
+  padding-left: 20px;
+}
 .color-p li {
-  padding: 0;
+  list-style-type: decimal;
+  list-style-position: inherit;
 }
 
 .color-p1 {
@@ -366,19 +374,17 @@ form {
 
 @media screen and (max-width: 768px) {
   header .bx-menu {
-    padding: 10px;
     margin: 10px;
     display: block;
     color: var(--primary);
     font-size: 35px;
-    border-radius: 5px;
+    font-weight: bold;
     padding: 0.5px 1.5px;
     cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   header .bx-menu:hover {
-    opacity: 0.7;
+    opacity: 0.5;
   }
 
   header .navbar {
@@ -395,10 +401,14 @@ form {
   }
 
   header .navbar a {
-    margin: 15px;
-    padding: 15px;
+    margin: 10px;
+    padding: 10px;
     background: var(--second);
     border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .navbar a:hover {
+    color: white;
   }
   .card {
     display: grid;
