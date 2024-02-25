@@ -167,6 +167,28 @@ header .bx-menu {
   max-width: 70%;
   font-size: large;
 }
+.sosmed {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.fa {
+  color: green;
+  background: yellow;
+  padding: 5px;
+  font-size: 15px;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px;
+  transition: transform 1s;
+}
+
+.fa:hover {
+  transform: scale(1.3);
+  color: white;
+}
 
 .galeri {
   display: flex;
@@ -279,9 +301,15 @@ picture {
 }
 
 .article-pic {
-  padding: 50px;
+  padding: 10px;
 }
-
+.article-paragraph:first-letter {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  float: left;
+  font-size: 6rem;
+  line-height: 0.65;
+  margin: 0.1em 0.1em 0.2em 0;
+}
 .form {
   padding-top: 10px 9%;
 }
