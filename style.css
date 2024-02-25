@@ -228,26 +228,32 @@ header .bx-menu {
   grid-template-columns: repeat(4, 1fr);
 }
 .vertikal {
-  transition: transform 2s;
+  filter: grayscale(100%);
+  transition: filter 6s;
   grid-column: span 2;
 }
 
 .vertikal:hover {
   transform: scale(1.2);
+  filter: grayscale(10%);
 }
 .horizontal {
-  transition: transform 2s;
+  filter: grayscale(100%);
+  transition: filter 6s;
   grid-row: span 2;
 }
 .horizontal:hover {
+  filter: grayscale(10%);
   transform: scale(1.2);
 }
 .big {
-  transition: transform 2s;
+  filter: grayscale(100%);
+  transition: filter 6s;
   grid-column: span 2;
   grid-row: span 2;
 }
 .big:hover {
+  filter: grayscale(10%);
   transform: scale(1.2);
 }
 .figur {
@@ -291,6 +297,7 @@ footer {
   padding: 20px 9%;
   text-align: center;
   background-color: var(--primary);
+  background: var(--primary);
   color: var(--second);
   width: 100%;
 }
@@ -303,6 +310,7 @@ picture {
 .article-pic {
   padding: 10px;
 }
+
 .article-paragraph:first-letter {
   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   float: left;
