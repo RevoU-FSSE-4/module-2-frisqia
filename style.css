@@ -229,7 +229,7 @@ header .bx-menu {
 }
 .vertikal {
   filter: grayscale(100%);
-  transition: filter 6s;
+  transition: all 6s;
   grid-column: span 2;
 }
 
@@ -239,7 +239,7 @@ header .bx-menu {
 }
 .horizontal {
   filter: grayscale(100%);
-  transition: filter 6s;
+  transition: all 6s;
   grid-row: span 2;
 }
 .horizontal:hover {
@@ -248,7 +248,7 @@ header .bx-menu {
 }
 .big {
   filter: grayscale(100%);
-  transition: filter 6s;
+  transition: all 6s;
   grid-column: span 2;
   grid-row: span 2;
 }
@@ -336,6 +336,8 @@ form {
 .form1 {
   margin: 10px;
   width: 50%;
+  height: 30px;
+  border-radius: 3px 3px 3px 3px;
 }
 .Massage {
   padding: 10px;
@@ -344,6 +346,7 @@ form {
   width: 100%;
 }
 #w3review {
+  border-radius: 3px 3px 3px 3px;
   width: 100%;
 }
 
@@ -356,10 +359,12 @@ form {
   display: flex;
 }
 .bd-display {
+  border-radius: 3px 3px 3px;
   width: 100%;
   display: grid;
 }
 .bd {
+  height: 30px;
   width: 50%;
 }
 
@@ -392,8 +397,6 @@ form {
 
 .color-p ul {
   padding-left: 20px;
-}
-.color-p li {
   list-style-type: decimal;
   list-style-position: inherit;
 }
