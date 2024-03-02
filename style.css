@@ -76,6 +76,7 @@ header .bx-menu {
 
 .navbar a:hover {
   color: var(--second);
+  text-shadow: 2px 1px 1px black;
 }
 
 .bx-search-alt {
@@ -86,6 +87,7 @@ header .bx-menu {
 }
 .bx-search-alt:hover {
   color: var(--second);
+  text-shadow: 2px 1px 1px black;
 }
 
 #toggle {
